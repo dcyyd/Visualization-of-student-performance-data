@@ -8,4 +8,4 @@ dependencies:
   - seaborn
   - mpld3
   - pip:
-    - -r ./srcrequirements.txt  # 安装项目中requirements.txt里的其他依赖
+    - -r ./src/requirements.txt  # 安装项目中requirements.txt里的其他依赖
