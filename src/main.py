@@ -28,14 +28,6 @@ import matplotlib as mpl
 _src_folder = 'data_source'
 _dst_folder = 'data_backup'
 
-import os
-import pandas as pd
-import matplotlib as mpl
-
-# 定义数据源文件夹和备份文件夹的全局变量
-_src_folder = 'data_source'
-_dst_folder = 'data_backup'
-
 
 def preprocess_data(file_path, output_dir):
     """
@@ -246,7 +238,7 @@ def visualize_data(data, output_dir):
 
 
 # 主函数
-def main():
+def test_main():
     """
     主函数，程序的入口点，用于协调各个功能模块的调用，完成数据处理、分析和可视化的整体流程。
     返回值：无，按顺序调用相关函数执行相应操作。
@@ -265,4 +257,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    test_main()
