@@ -17,7 +17,10 @@
 # @Copyright (C) 2024-2024 ChangYou Dou. All Rights Reserved.
 # @License：本代码遵循MIT许可证，允许在遵守许可证条款的情况下自由使用、修改和分发。
 """
-import mpld3
+try:
+    import mpld3
+except ImportError:
+    mpld3 = None
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
