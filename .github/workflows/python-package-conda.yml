@@ -9,10 +9,10 @@ jobs:
       max-parallel: 5
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Python 3.12
+    - name: Set up Python 3.8
       uses: actions/setup-python@v3
       with:
-        python-version: '3.12'
+        python-version: '3.8'
     - name: Add conda to system path
       run: |
         echo $CONDA/bin >> $GITHUB_PATH
@@ -20,7 +20,7 @@ jobs:
       run: |
         conda env create -f environment.yml
         conda activate student_performance_analysis
-        pip install --use-pep517 -r ./src/requirements.txt
+        pip install -r requirements.txt
     - name: Lint with flake8
       run: |
         conda install flake8
