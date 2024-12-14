@@ -16,6 +16,9 @@ jobs:
     - name: Add conda to system path
       run: |
         echo $CONDA/bin >> $GITHUB_PATH
+    - name: Initialize conda
+      run: |
+        conda init
     - name: Install dependencies
       run: |
         conda env create -f environment.yml
@@ -27,5 +30,4 @@ jobs:
         conda install pytest
     - name: Run pytest
       run: |
-        conda activate student_performance_analysis
         pytest src/
