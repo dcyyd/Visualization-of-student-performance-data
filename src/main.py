@@ -246,7 +246,7 @@ def visualize_data(data, output_dir):
 
 
 # 主函数
-def test_main():
+def main():
     """
     主函数，程序的入口点，用于协调各个功能模块的调用，完成数据处理、分析和可视化的整体流程。
     返回值：无，按顺序调用相关函数执行相应操作。
@@ -265,4 +265,4 @@ def test_main():
 
 
 if __name__ == '__main__':
-    test_main()
+    main()
