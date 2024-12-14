@@ -1,0 +1,11 @@
+name: student_performance_analysis
+channels:
+  - defaults
+dependencies:
+  - python=3.8  # 根据实际需求调整Python版本
+  - pandas
+  - matplotlib
+  - seaborn
+  - mpld3
+  - pip:
+    - -r requirements.txt  # 安装项目中requirements.txt里的其他依赖
