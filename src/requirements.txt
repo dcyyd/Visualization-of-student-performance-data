@@ -1,28 +1,4 @@
-# requirements.txt for student_performance_analysis environment
-
-# Flask web framework
-Flask==2.1.0
-
-# Template engine for Flask
-Jinja2==3.1.2
-
-# WSGI utility library for Flask
-Werkzeug==2.2.3
-
-# Data analysis library
-pandas==1.5.3
-
-# Support for large, multi-dimensional arrays and matrices of numeric data
-numpy==1.24.0
-
-# Comprehensive library for data analysis and manipulation
-scikit-learn==1.1.3
-
-# Library for scientific computing and technical computing
-scipy==1.10.0
-
-# Matplotlib is a plotting library for the Python programming language
-matplotlib==3.6.2
-
-# Seaborn is a Python data visualization library based on matplotlib
+mpld3==0.5.10
+pandas==1.1.5
+matplotlib==3.5.3
 seaborn==0.12.2
