@@ -252,7 +252,7 @@ def test_main():
         os.makedirs(output_dir)
 
     # 构建数据文件的完整路径
-    file_path = os.path.join(_src_folder, 'StudentsPerformance.csv')
+    file_path = os.path.join('src/',_src_folder, 'StudentsPerformance.csv')
 
     data = preprocess_data(file_path, output_dir)
     analyze_data(data, output_dir)
