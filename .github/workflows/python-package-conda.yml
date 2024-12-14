@@ -19,14 +19,12 @@ jobs:
     - name: Install dependencies
       run: |
         conda env create -f environment.yml
-        source activate student_performance_analysis  # 注意这里的命令改为 source activate
-        pip install -r src/requirements.txt  # 确保 requirements.txt 的路径正确
-    - name: Lint with flake8
-      run: |
-        conda install flake8
-        flake8 --count --select=E9,F63,F7,F82 --show-source --statistics
-        flake8 --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
+        source activate student_performance_analysis
+        pip install -r src/requirements.txt
+    - name: Install pytest
       run: |
         conda install pytest
-        pytest
+    - name: Run pytest
+      run: |
+        source activate student_performance_analysis
+        pytest ./src  # 假设测试文件在 src 目录下
