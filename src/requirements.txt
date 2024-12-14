@@ -1,4 +1,31 @@
-pandas~=0.23.4
-matplotlib~=2.2.3
-seaborn~=0.9.0
-mpld3==0.5.10
+# requirements.txt for student_performance_analysis environment
+
+# Flask web framework
+Flask==2.0.3
+
+# Template engine for Flask
+Jinja2==3.0.3
+
+# WSGI utility library for Flask
+Werkzeug==2.0.3
+
+# Data analysis library
+pandas==1.4.2
+
+# Support for large, multi-dimensional arrays and matrices of numeric data
+numpy==1.22.3
+
+# Comprehensive library for data analysis and manipulation
+scikit-learn==1.0.2
+
+# Library for scientific computing and technical computing
+scipy==1.7.3
+
+# Matplotlib is a plotting library for the Python programming language
+matplotlib==3.5.1
+
+# Seaborn is a Python data visualization library based on matplotlib
+seaborn==0.11.2
+
+# mpld3 is a library for creating interactive 3D plots in Python
+mpld3==0.5.1  # Please verify the compatibility with Python 3.8, if not available, remove this line
