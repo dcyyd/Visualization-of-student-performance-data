@@ -27,4 +27,4 @@ jobs:
     - name: Run pytest
       run: |
         source activate student_performance_analysis
-        pytest ./src  # 假设测试文件在 src 目录下
+        pytest src  # 假设测试文件在 src 目录下
