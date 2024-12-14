@@ -15,21 +15,17 @@ jobs:
         python-version: '3.8'
     - name: Add conda to system path
       run: |
-        # $CONDA 是指向 miniconda 目录根的环境变量
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
         conda env create -f environment.yml
         conda activate student_performance_analysis
-        # 使用符合PEP 517的方式安装pip依赖（假设之前遇到相关问题需要这样处理）
-        pip install --use-pep517 -r./src/requirements.txt
+        pip install --use-pep517 -r ./src/requirements.txt
     - name: Lint with flake8
       run: |
         conda install flake8
-        # 若存在Python语法错误或未定义名称则停止构建
-        flake8. --count --select=E9,F63,F7,F82 --show-source --statistics
-        # 将所有错误视为警告（exit-zero 模式），GitHub 编辑器宽度为127字符
-        flake8. --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        flake8 --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
         conda install pytest
